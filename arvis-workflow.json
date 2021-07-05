@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "category": "Productivity",
+  "name": "arvis-mvns",
+  "readme": "Search for java libraries at maven central repository",
+  "defaultIcon": "icon.png",
+  "description": "Search for java libraries at maven central repository",
+  "webAddress": "https://github.com/jopemachine/arvis-mvns",
+  "creator": "xfslove",
+  "version": "0.0.1",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "title": "Search for java libraries",
+      "command": "mvn",
+      "scriptFilter": "node index.js {query}",
+      "runningSubtext": "Hold on a sec until script work is done...",
+      "argType": "optional",
+      "withspace": true,
+      "actions": [
+        {
+          "type": "clipboard",
+          "modifiers": "normal",
+          "text": "{query}"
+        }
+      ]
+    }
+  ]
+}

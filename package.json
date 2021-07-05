@@ -1,0 +1,40 @@
+{
+  "name": "arvis-mvns",
+  "version": "0.0.1",
+  "description": "arvis 3 workflow to search for java libraries at central repo",
+  "license": "MIT",
+  "author": {
+    "name": "hanwen.huang",
+    "email": "xfslove@gmail.com",
+    "url": "https://github.com/xfslove/arvis-mvns"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "arvis-workflow.json"
+  ],
+  "keywords": [
+    "mvn",
+    "arvis",
+    "arvis-workflow",
+    "workflow",
+    "arvish"
+  ],
+  "dependencies": {
+    "arvish": ">=0.4.6",
+    "date-format": "^1.1.0"
+  },
+  "devDependencies": {
+    "arvish-test": ">=0.1.0",
+    "ava": "*",
+    "xo": "*"
+  }
+}
