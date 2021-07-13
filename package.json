@@ -1,7 +1,7 @@
 {
   "name": "arvis-mvns",
   "version": "0.0.1",
-  "description": "arvis 3 workflow to search for java libraries at central repo",
+  "description": "Arvis workflow to search for java libraries at central repo",
   "license": "MIT",
   "author": {
     "name": "hanwen.huang",
